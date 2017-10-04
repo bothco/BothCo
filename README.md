@@ -2,6 +2,6 @@
 BothCo
 
 
-Contributers:
+Contributors:
  - Alex
  - Colin
