@@ -2,48 +2,16 @@
   <head>
     <title>Both Company</title>
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-    <style>
-      body {
-        background: cornsilk;
-      }
-      .both-main {
-        display: block;
-        margin: 0 auto;
-        height: 100px;
-        line-height: 100px;
-        width: 100%;
-        border: 5px solid mediumspringgreen;
-        background: black;
-        color: white;
-        font-size: 40pt;
-        text-align: center;
-        padding: 5px;
-        margin: 5px;
-        font-family: 'Lobster', cursive;
-        animation: remediation 5s infinite;
-      }
-
-      .center {
-        text-align: center
-      }
-      
-      @keyframes remediation {
-        0% {
-          text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em magenta;
-        }
-        50% {
-          text-shadow: 1px 1px 2px green, 0 0 1em mistyrose, 0 0 0.2em palegoldenrod;
-        }
-        100% {
-          text-shadow: 3px 1px 2px whitesmoke, 0 0 1em cyan, 3px 0 0.2em blanchedalmond;
-        }
-    }
-    </style>
+    <link rel="stylesheet" href="styles/styles.css" rel="stylesheet">
   </head>
   <body>
     <div class="both-main">BOTH</div>
     <p class="center">Going where every company has never gone and/or gone to before</p>
     <br>
-    <div class="center"><img src="http://www.reactiongifs.com/r/bth.gif" /></div>
+    <div class="center">
+      <img id="both-img" width="300" src="http://www.reactiongifs.com/r/bth.gif" />
+    </div>
+
+    <script type="text/javascript" src="scripts/scripts.js"></script>
   </body>
 </html>

@@ -1,0 +1,34 @@
+body {
+  background: cornsilk;
+}
+
+.both-main {
+  display: block;
+  height: 100px;
+  line-height: 100px;
+  border: 5px solid mediumspringgreen;
+  background: black;
+  color: white;
+  font-size: 40pt;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  font-family: 'Lobster', cursive;
+  animation: remediation 5s infinite;
+}
+
+.center {
+  text-align: center
+}
+
+@keyframes remediation {
+  0% {
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em magenta;
+  }
+  50% {
+    text-shadow: 1px 1px 2px green, 0 0 1em mistyrose, 0 0 0.2em palegoldenrod;
+  }
+  100% {
+    text-shadow: 3px 1px 2px whitesmoke, 0 0 1em cyan, 3px 0 0.2em blanchedalmond;
+  }
+}
