@@ -2,6 +2,11 @@ body {
   background: cornsilk;
 }
 
+#both-img {
+  position: absolute;
+  margin-left: -150px;
+}
+
 .both-main {
   display: block;
   height: 100px;
