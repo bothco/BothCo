@@ -12,7 +12,7 @@ if (bothImage) {
 
 function swapBothImage() {
   const images = [
-    'http://www.reactiongifs.com/r/bth.gif',
+    'https://www.reactiongifs.com/r/bth.gif',
     'https://media1.giphy.com/media/3ohzdMDbNXvnWdeOZi/giphy.gif',
     'https://media2.giphy.com/media/3o85xIO33l7RlmLR4I/giphy.gif',
     'https://media3.giphy.com/media/TtFqXVtOQkomI/giphy.gif'
