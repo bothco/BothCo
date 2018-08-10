@@ -12,6 +12,11 @@ body {
   margin-left: -150px;
 }
 
+#both-logo {
+  position: absolute;
+  margin-left: 5px;
+}
+
 .both-main {
   display: block;
   height: 100px;
