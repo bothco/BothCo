@@ -16,7 +16,7 @@ function swapBothImage() {
     'https://media1.giphy.com/media/3ohzdMDbNXvnWdeOZi/giphy.gif',
     'https://media2.giphy.com/media/3o85xIO33l7RlmLR4I/giphy.gif',
     'https://media3.giphy.com/media/TtFqXVtOQkomI/giphy.gif',
-    'https://files.slack.com/files-pri/T028E2C1P-FC65J3MQ9/3512526464353.gif'
+    'https://media.giphy.com/media/1isdB21HPSkQLGYEil/giphy.gif'
   ];
 
   imageIndex = (imageIndex === images.length - 1) ? 0 : imageIndex + 1;
