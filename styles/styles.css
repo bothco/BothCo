@@ -17,6 +17,10 @@ body {
   margin-left: 5px;
 }
 
+#wrapper {
+  min-height: 100%;
+}
+
 .both-main {
   display: block;
   height: 100px;
@@ -44,8 +48,79 @@ body {
   width: 100px;
 }
 
-#wrapper {
-  min-height: 100%;
+.product-container {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.product {
+  text-align: center;
+  border: 10px double black;
+  width: 400px;
+  height: 450px;
+  background-color: mintcream;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.product-img {
+  display: block;
+  margin: 10px auto;
+  border: 2px solid brown;
+  border-radius: 10px;
+}
+
+.product-title {
+  border-bottom: 1px solid black;
+  font-family: monospace;
+  font-size: 22pt;
+  margin-top: 0px;
+  padding-bottom: 10px;
+}
+
+.product-description {
+  font-family: monospace;
+}
+
+.divineBeing-left {
+  padding: 10px;
+  border-top: 1px solid blue;
+  border-right: 10px solid blue;
+  border-bottom: 1px solid blue;
+  background-color: #42d4f4;
+  width: 1000px;
+  font-family: monospace;
+  font-size: 22pt;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.inspiration-right {
+  padding: 10px;
+  border-top: 1px solid blue;
+  border-left: 10px solid blue;
+  border-bottom: 1px solid blue;
+  background-color: #42d4f4;
+  width: 1000px;
+  font-family: monospace;
+  font-size: 22pt;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float:right;
+}
+
+.footer {
+  padding: 10px;
+  border-top: 1px solid blue;
+  background-color: #072748;
+  font-family: monospace;
+  font-size: 22pt;
+  margin-top: 20px;
+  clear: both;
+  color: white;
 }
 
 @keyframes remediation {
