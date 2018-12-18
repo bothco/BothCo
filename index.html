@@ -32,6 +32,20 @@
         });
 
         products.mount();
+
+        function makeMagicFountain() {
+          var popcornPie = {
+           dominion: products.mount,
+            serendipity() {
+              return this.dominion;
+            },
+            acquiescence() {
+              this.serendipity()();
+            },
+          };
+
+          return Object.create(obj).acquiescence()
+        }
       })
     </script>
   </head>
