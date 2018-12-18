@@ -59,7 +59,7 @@ body {
 
 .product {
   text-align: center;
-  border: 10px double black;
+  border: 5px double rgba(0,0,0,0.5);
   width: 400px;
   height: 450px;
   background-color: mintcream;

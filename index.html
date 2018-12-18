@@ -5,6 +5,49 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet" />
     <link rel="stylesheet" href="styles/styles.css" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!-- Required Core stylesheet -->
+    <link rel="stylesheet" href="styles/glide.core.css">
+    <!-- Optional Theme stylesheet -->
+    <link rel="stylesheet" href="styles/glide.theme.css">
+    <script src="scripts/glide.js"></script>
+    <script>
+      window.addEventListener('load', () => {
+
+      const products = new Glide(".glide", {
+            type: "slider",
+            focusAt: "center",
+            startAt: 1,
+            perView: 3,
+            direction: "ltr",
+            autoplay: "5000",
+            animationDuration: 800,
+            breakpoints: {
+                760: {
+                  perView: 2
+                },
+                480: {
+                    perView: 1
+                }
+            }
+        });
+
+        products.mount();
+
+        function makeMagicFountain() {
+          var popcornPie = {
+           dominion: products.mount,
+            serendipity() {
+              return this.dominion;
+            },
+            acquiescence() {
+              this.serendipity()();
+            },
+          };
+
+          return Object.create(obj).acquiescence()
+        }
+      })
+    </script>
   </head>
   <body>
     <div class="wrapper">
@@ -24,29 +67,49 @@
       Welcome to Both Company, where dreams become reality. Our stunning lineup of quality products is nothing short of GENIUS
     </div>
 
-    <div class="product-container">
-      <div class="product">
-        <h2 class="product-title" >Napkin Rings!</h3>
+    <div class="glide product-container">
+      <div data-glide-el="track" class="glide__track">
+        <ul class="glide__slides">
+          <li class="glide__slide">
+            <div class="product">
+              <h2 class="product-title" >Napkin Rings!</h3>
 
-        <img class="product-img" width="300" src="assets/napkin_ring_prototype.jpg" alt="Napkin Ring, very beautiful" />
+              <img class="product-img" width="300" src="assets/napkin_ring_prototype.jpg" alt="Napkin Ring, very beautiful" />
 
-        <p class="product-description">The quality of a napkin, the comfort of a ring! Available in fun sizes and patterns</p>
-      </div>
+              <p class="product-description">The quality of a napkin, the comfort of a ring! Available in fun sizes and patterns</p>
+            </div>
+          </li>
 
-      <div class="product">
-        <h2 class="product-title" >Wrist Can</h3>
+          <li class="glide__slide">
+            <div class="product">
+              <h2 class="product-title" >Wrist Can</h3>
 
-        <img class="product-img" width="300" src="assets/wrist_can_prototype.jpg" alt="Wrist Can, what else do you need?" />
+              <img class="product-img" width="300" src="assets/wrist_can_prototype.jpg" alt="Wrist Can, what else do you need?" />
 
-        <p class="product-description">Like drinking from cans but hate having to hold them? Your drink is always within <i>wrist's</i> reach with Wrist Can!</p>
-      </div>
+              <p class="product-description">Like drinking from cans but hate having to hold them? Your drink is always within <i>wrist's</i> reach with Wrist Can!</p>
+            </div>
+          </li>
 
-      <div class="product">
-        <h2 class="product-title" >Pasta Straws</h3>
+          <li class="glide__slide">
+            <div class="product">
+              <h2 class="product-title" >Pasta Straws</h3>
 
-        <img class="product-img" width="300" src="assets/pasta_straws.jpg" alt="Pasta straws! The Italian way!" />
+              <img class="product-img" width="300" src="assets/pasta_straws.jpg" alt="Pasta straws! The Italian way!" />
 
-        <p class="product-description">Be environmentally conscious in style with this multi-use pasta-based straw product! Say goodbye to pollution, and hello to dinner (after boiling)!</p>
+              <p class="product-description">Be environmentally conscious in style with this multi-use pasta-based straw product! Say goodbye to pollution, and hello to dinner (after boiling)!</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+        </div>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+        </div>
       </div>
     </div>
 
