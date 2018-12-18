@@ -32,8 +32,12 @@ body {
   text-align: center;
   padding: 5px;
   margin: 5px;
-  font-family: 'Lobster', cursive;
+  font-family: 'Lobster Two', cursive;
   animation: remediation 5s infinite;
+}
+
+.tagline {
+  font-family: 'Lobster Two', oblique;
 }
 
 .center {
